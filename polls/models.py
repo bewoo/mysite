@@ -11,7 +11,7 @@ class Question(models.Model):
         return self.pub_date >= timezone.now() - datetime.timedelta(days=1)
 
     question_text = models.CharField(max_length=200)
-    pub_date = models.DateTimeField('date published') #pub_date컬럼에 대한 레이블 문고입니다 admin사이트에서 이문구 확인 가능함
+    pub_date = models.DateTimeField('date published')
 
 
 class Choice(models.Model):
